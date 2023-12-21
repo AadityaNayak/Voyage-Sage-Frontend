@@ -167,7 +167,7 @@ const Home = () => {
         </Container>
       </section>
       {/* ========== TESTIMONIAL SECTION END ================== */}
-      <NewsLetter />
+     
     </>
   );
 };
