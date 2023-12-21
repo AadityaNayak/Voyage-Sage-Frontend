@@ -2,24 +2,26 @@ import React from 'react'
 import ServiceCard from './ServiceCard'
 import { Col } from 'reactstrap'
 import weatherImg from '../assets/images/weather.png'
+import googletranslate from '../assets/images/googletranslate.png'
 import guideImg from '../assets/images/guide.png'
 import customizationImg from '../assets/images/customization.png'
 
+
 const servicesData = [
    {
-      imgUrl: weatherImg,
-      title: `Calculate Weather`,
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
+      imgUrl: googletranslate,
+      title: `Language Translator`,
+      desc: `Break down language barriers effortlessly with our language translator feature, making communication`,
    },
    {
       imgUrl: guideImg,
-      title: `Best Tour Guide`,
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
+      title: `Currency Convertor`,
+      desc: `Experience hassle-free transactions with our built-in currency conversion`,
    },
    {
       imgUrl: customizationImg,
-      title: 'Customization',
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
+      title: 'Coming Soon',
+      desc: `....`,
    },
 ]
 
@@ -29,6 +31,7 @@ const ServiceList = () => {
          servicesData.map((item, index) => (
             <Col lg='3' md='6' sm='12' className='mb-4' key={index}>
                <ServiceCard item={item} />
+              
             </Col>))
       }
    </>
